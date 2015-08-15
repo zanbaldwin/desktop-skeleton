@@ -1,0 +1,14 @@
+{
+    "name": "zanderbaldwin-chase",
+    "main": "index.js",
+    "author": "Zander Baldwin <hello@zanderbaldwin.com>",
+    "dependencies": {
+        "requirejs": "~2.1"
+    },
+    "devDependencies": {
+        "less": "~2.5",
+        "iced-coffee-script": "^108.0.7",
+        "vulcanize": "~1.10",
+        "electron-prebuilt": "*"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "polymer-sandbox",
+    "version": "0.0.0",
+    "authors": [
+        "Zander Baldwin <zander.baldwin@basekit.com>"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "polymer": "~1.0",
+        "iron": " PolymerElements/iron-elements#~1.0",
+        "paper": " PolymerElements/paper-elements#~1.0",
+        "neon": " PolymerElements/neon-elements#~1.0",
+        "platinum": " PolymerElements/platinum-elements#~1.0",
+        "app-router": "~2.6",
+        "gss": "~2.0"
+    }
+}

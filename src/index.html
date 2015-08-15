@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Polymer Sandbox" />
+        <meta name="generator" content="Polymer Sandbox" />
+        <title>Polymer Sandbox</title>
+        <!-- Web Application Manifest -->
+        <link rel="manifest" href="manifest.json" />
+
+        <!-- Include the Grid Stylesheets library. -->
+        <script type="text/javascript" src="bower_components/gss/dist/gss.js"></script>
+        <script type="text/javascript">
+            //<[!CDATA[
+                window.engine = new GSS(document);
+            //]]>
+        </script>
+        <!-- Include the WebComponents library and import all the Polymer elements. -->
+        <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+        <link rel="import" href="elements.html">
+
+        <!--
+            Include styling documents (compiled from LessCSS), the layout documents (from
+            GSS [CCSS+VFL]), and the interaction scripts (compiled from Iced CoffeeScript).
+        -->
+        <link href="assets/main.css" type="text/css" rel="stylesheet" media="all" />
+        <link href="assets/layout/main.ccss" type="text/gss" rel="stylesheet" />
+        <script src="assets/scripts/main.js" type="text/javascript"></script>
+    </head>
+
+    <body unresolved>
+        <!-- Placeholder for an API request progress bar. -->
+        <div id="progress-request"></div>
+
+        <app-router trailingSlash="ignore">
+            <app-route path="/home" import="/pages/home-page.html">
+                <template>
+                    <paper-card heading="Actions can be stacked" class="pink x-scope paper-card-1" aria-label="Actions can be stacked">
+                    <paper-material id="shadow" class="style-scope paper-card x-scope paper-material-0" elevation="1">
+                        <div class="header style-scope paper-card">
+                            <img class="style-scope paper-card" src="" hidden="">
+                            <div class="title-text style-scope paper-card">Actions can be stacked</div>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
+                            </p>
+                            
+                            <paper-input label="Username" aria-disabled="false" class="x-scope paper-input-0">
+                                <paper-input-container class="style-scope paper-input x-scope paper-input-container-0">
+                                    <div class="floated-label-placeholder style-scope paper-input-container">&nbsp;</div>
+                                    <template is="dom-if" class="style-scope paper-input-container"></template>
+                                    <div class="input-content style-scope paper-input-container">
+                                        <div class="label-and-input-container style-scope paper-input-container">
+                                            <label class="style-scope paper-input" style="left: 0px;" id="paper-input-label-1">Username</label>
+                                            <input is="iron-input" id="input" class="style-scope paper-input" autocomplete="off" placeholder="" autocapitalize="none" autocorrect="off" aria-describedby="" aria-labelledby="paper-input-label-1">
+                                            <template is="dom-if" class="style-scope paper-input"></template>
+                                            <template is="dom-if" class="style-scope paper-input"></template>
+                                        </div>
+                                    </div>
+                                    <div class="underline style-scope paper-input-container">
+                                        <div class="unfocused-line fit style-scope paper-input-container"></div>
+                                        <div class="focused-line fit style-scope paper-input-container"></div>
+                                    </div>
+                                    <div class="add-on-content style-scope paper-input-container"></div>
+                                </paper-input-container>
+                            </paper-input>
+
+                            <paper-input label="Password" type="password" aria-disabled="false" class="x-scope paper-input-0">
+                                <paper-input-container class="style-scope paper-input x-scope paper-input-container-0">
+                                    <div class="floated-label-placeholder style-scope paper-input-container">&nbsp;</div>
+                                    <template is="dom-if" class="style-scope paper-input-container"></template>
+                                    <div class="input-content style-scope paper-input-container">
+                                        <div class="label-and-input-container style-scope paper-input-container">
+                                            <label class="style-scope paper-input" style="left: 0px;" id="paper-input-label-1">Password</label>
+                                            <input is="iron-input" id="input" class="style-scope paper-input" autocomplete="off" placeholder="" autocapitalize="none" autocorrect="off" aria-describedby="" aria-labelledby="paper-input-label-1">
+                                            <template is="dom-if" class="style-scope paper-input"></template>
+                                            <template is="dom-if" class="style-scope paper-input"></template>
+                                        </div>
+                                    </div>
+                                    <div class="underline style-scope paper-input-container">
+                                        <div class="unfocused-line fit style-scope paper-input-container"></div>
+                                        <div class="focused-line fit style-scope paper-input-container"></div>
+                                    </div>
+                                    <div class="add-on-content style-scope paper-input-container"></div>
+                                </paper-input-container>
+                            </paper-input>
+
+                        </div>
+                        <div class="card-actions">
+                            <paper-button role="button" tabindex="0" aria-disabled="false" class="x-scope paper-button-0">
+                                <paper-ripple class="style-scope paper-button">
+                                    <div id="background" class="style-scope paper-ripple"></div>
+                                    <div id="waves" class="style-scope paper-ripple"></div>
+                                </paper-ripple>
+                                <paper-material animated="" class="content  style-scope paper-button x-scope paper-material-0" elevation="0">
+                                    Login
+                                </paper-material>
+                            </paper-button>
+                        </div>
+                    </paper-material>
+                    </paper-card>
+                </template>
+            </app-route>
+            <app-route path="/customer/*" import="/pages/customer-page.html"></app-route>
+            <app-route path="/order/:id" import="/pages/order-page.html"></app-route>
+            <app-route path="/^\/\w+\/\d+$/i" regex import="/pages/regex-page.html"></app-route>
+            <app-route path="*" template>
+                <template>
+                    <paper-progress indeterminate="" value="0" class="x-scope paper-progress-0">
+                        <div id="progressContainer" role="progressbar" class="style-scope paper-progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div id="secondaryProgress" class="fit style-scope paper-progress" style="transform: scaleX(0);"></div>
+                            <div id="activeProgress" class="fit style-scope paper-progress indeterminate" style="transform: scaleX(0);"></div>
+                            <div id="indeterminateSplitter" class="fit style-scope paper-progress indeterminate"></div>
+                        </div>
+                    </paper-progress>
+                </template>
+            </app-route>
+        </app-router>
+
+        <div id="wrapper">
+            <template></template>
+        </div>
+
+        <!-- Placeholder for a data-sync progress bar. -->
+        <div id="progress-sync"></div>
+
+        <!-- Google Analytics goes here. -->
+        <script type="text/javascript">
+            //<![CDATA[
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+                _gaq.push(['_trackPageview']);
+                (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+            //]]>
+        </script>
+    </body>
+
+</html>
