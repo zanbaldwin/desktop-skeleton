@@ -1,8 +1,8 @@
 {
-    "name": "polymer-sandbox",
+    "name": "nosco-ce",
     "version": "0.0.0",
     "authors": [
-        "Zander Baldwin <zander.baldwin@basekit.com>"
+        "Zander Baldwin <hello@zanderbaldwin.com>"
     ],
     "license": "MIT",
     "ignore": [
@@ -13,12 +13,13 @@
         "tests"
     ],
     "dependencies": {
-        "polymer": "~1.0",
+        "polymer": "~1.1",
         "iron": " PolymerElements/iron-elements#~1.0",
         "paper": " PolymerElements/paper-elements#~1.0",
         "neon": " PolymerElements/neon-elements#~1.0",
         "platinum": " PolymerElements/platinum-elements#~1.0",
-        "app-router": "~2.6",
-        "gss": "~2.0"
+        "gss": "~2.0",
+        "backbone": "~1.2",
+        "require": "jrburke/requirejs#~2.1"
     }
 }

@@ -17,7 +17,7 @@ app.on "ready", ->
         width: 800
         height: 600
 
-    appWindow.loadUrl "file://#{__dirname}/index.html"
+    appWindow.loadUrl "file://#{__dirname}/pages/index.html"
     appWindow.openDevTools();
 
     appWindow.on "closed", ->
