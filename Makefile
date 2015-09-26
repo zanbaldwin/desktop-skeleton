@@ -11,10 +11,12 @@ usage:
 
 clean:
 	rm -rf build
-	rm -rf node_modules
-	rm -rf bower_components
 	find src -name "*.js" ! -path "src/index.js" -type f -delete
 	find src -name "*.css" -type f -delete
+
+clean-all: clean
+	rm -rf node_modules
+	rm -rf bower_components
 
 dependencies:
 	npm install
