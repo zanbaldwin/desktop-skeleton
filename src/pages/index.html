@@ -22,13 +22,27 @@
             Include styling documents (compiled from LessCSS), the layout documents (from
             GSS [CCSS+VFL]), and the interaction scripts (compiled from Iced CoffeeScript).
         -->
-        <link href="assets/styles/main.less" type="text/css" rel="stylesheet" media="all" />
+        <link href="assets/styles/main.css" type="text/css" rel="stylesheet" media="all" />
         <link href="assets/layout/main.ccss" type="text/gss" rel="stylesheet" />
 
-        <script data-main="assets/scripts/main" src="../bower_components/require/require.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var require = {
+                paths: {
+                    "jquery":           "../../../bower_components/jquery/dist/jquery",
+                    "vue":              "../../../bower_components/vuejs/dist/vue",
+                    "vue-resource":     "../../../bower_components/vue-resource/dist/vue-resource",
+                    "vue-router":       "../../../bower_components/vue-router/dist/vue-router",
+                    "vue-validator":    "../../../bower_components/vue-validator/dist/vue-validator",
+                    "velocity":         "../../../bower_components/velocity/velocity",
+                    "velocityui":         "../../../bower_components/velocity/velocityui",
+                    "snap.svg":         "../../../bower_components/snap.svg/dist/snap.svg",
+                },
+            };
+        </script>
+        <script data-main="assets/scripts/main" src="../bower_components/require/require.js" type="text/javascript" async></script>
     </head>
 
-    <body unresolved>
+    <body>
         <!-- Placeholder for an API request progress bar. -->
         <div id="progress-request"></div>
         <!-- Placeholder for a data-sync progress bar. -->

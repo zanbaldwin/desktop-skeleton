@@ -1,5 +1,4 @@
 # Nosco CE
-=============================================
 
 Chaser desktop front-end built with Electron.
 

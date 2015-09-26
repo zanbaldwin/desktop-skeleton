@@ -16,17 +16,16 @@ clean:
 	find src -name "*.js" ! -path "src/index.js" -type f -delete
 	find src -name "*.css" -type f -delete
 
-
 dependencies:
 	npm install
 	bower install
 
 assets:
-	./node_modules/.bin/coffee --output build --bare --no-header --compile src
-	./node_modules/.bin/lessc build/assets/styles/main.less build/assets/styles/main.css
+	./node_modules/.bin/coffee --output src --bare --no-header --compile src
+	./node_modules/.bin/lessc src/assets/styles/main.less src/assets/styles/main.css
 
 # Run the application without compiling. Slower but easier for development.
-run: dependencies
+run: dependencies assets
 	./node_modules/.bin/electron ./src
 
 # Compile all assets for a faster application.

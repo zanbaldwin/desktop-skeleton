@@ -14,8 +14,10 @@ app.on "window-all-closed", ->
 
 app.on "ready", ->
     appWindow = new BrowserWindow
-        width: 800
-        height: 600
+        width: 1000
+        height: 800
+        "min-width": 800
+        "min-height": 600
 
     appWindow.loadUrl "file://#{__dirname}/pages/index.html"
     appWindow.openDevTools();

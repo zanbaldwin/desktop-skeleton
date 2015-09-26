@@ -21,6 +21,6 @@
         "vue-loader":       "vuejs/vue-loader#master",
         "vue-validator":    "vuejs/vue-validator#~1.4",
         "velocity":         "julianshapiro/velocity#~1.2",
-        "snap-svg":         "adobe-webplatform/Snap.svg#~0.4"
+        "snap.svg":         "adobe-webplatform/Snap.svg#~0.4"
     }
 }
