@@ -14,7 +14,6 @@
     ],
     "dependencies": {
         "gss":              "~2.0",
-        "require":          "jrburke/requirejs#~2.1",
         "vuejs":            "yyx990803/vue#~1.0",
         "vue-router":       "vuejs/vue-router#~0.6",
         "vue-resource":     "vuejs/vue-resource#~0.1",
