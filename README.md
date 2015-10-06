@@ -1,6 +1,8 @@
-# Nosco CE
+# Desktop Skeleton
 
-Chaser desktop front-end built with Electron.
+Skeleton desktop application built with Electron.
+
+Uses LESS, GSS, Vue.js, Snap.svg, etc.
 
 ## Prerequisites
 
